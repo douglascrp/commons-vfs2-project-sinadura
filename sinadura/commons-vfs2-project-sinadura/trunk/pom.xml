@@ -38,8 +38,6 @@
 
   <modules>
     <module>core</module>
-    <module>examples</module>
-    <module>dist</module>
   </modules>
 
   <issueManagement>
