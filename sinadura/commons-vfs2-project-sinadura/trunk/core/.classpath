@@ -21,5 +21,6 @@
 	<classpathentry kind="var" path="M2_REPO/org/apache/maven/scm/maven-scm-provider-svnexe/1.4/maven-scm-provider-svnexe-1.4.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/apache/maven/scm/maven-scm-provider-svn-commons/1.4/maven-scm-provider-svn-commons-1.4.jar"/>
 	<classpathentry kind="var" path="M2_REPO/regexp/regexp/1.3/regexp-1.3.jar"/>
+	<classpathentry kind="lib" path="/commons-vfs2-project-sinadura"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
