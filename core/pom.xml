@@ -302,4 +302,13 @@
       </build>
     </profile>
   </profiles>
+  
+  <distributionManagement>
+	  <repository>
+	    <id>maven-nexus-zylk</id>
+	    <name>Maven Nexus at Zylk</name>
+	    <url>https://services.zylk.net/nexus/content/repositories/sinadura-vfs2</url>
+	  </repository>
+	
+  </distributionManagement>
 </project>
