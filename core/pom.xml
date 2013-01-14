@@ -327,7 +327,7 @@
 		<repository>
 			<id>maven-nexus-zylk</id>
 			<name>Maven Nexus at Zylk</name>
-			<url>https://services.zylk.net/nexus/content/repositories/sinadura-vfs2</url>
+			<url>https://services.zylk.net/nexus/content/repositories/sinadura-releases</url>
 		</repository>
 
 	</distributionManagement>
