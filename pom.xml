@@ -21,12 +21,11 @@
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.apache.commons</groupId>
 	<artifactId>commons-vfs2-project-sinadura</artifactId>
 	<name>Commons VFS</name>
 	<description>VFS is a Virtual File System library.</description>
 	<packaging>pom</packaging>
-	<version>2.0</version>
+	<version>2.1-SNAPSHOT</version>
 
 	<url>http://commons.apache.org/vfs/</url>
 	<inceptionYear>2002</inceptionYear>
@@ -41,9 +40,8 @@
 	</issueManagement>
 
 	<scm>
-		<connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/vfs/tags/commons-vfs2-project-2.0</connection>
-		<developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/vfs/tags/commons-vfs2-project-2.0</developerConnection>
-		<url>http://svn.apache.org/viewvc/commons/proper/vfs/tags/commons-vfs2-project-2.0</url>
+   		<connection>scm:svn:https://services.zylk.net/sinadura-repo/sinadura/commons-vfs2-project-sinadura/trunk</connection>
+   		<url>https://services.zylk.net/sinadura-repo/sinadura/commons-vfs2-project-sinadura/trunk</url>
 	</scm>
 
 	<developers>
@@ -271,6 +269,11 @@
 					<excludeFilterFile>findbugs-exclude-filter.xml</excludeFilterFile>
 				</configuration>
 			</plugin>
+			<plugin>
+   				<groupId>org.apache.maven.plugins</groupId>
+   				<artifactId>maven-release-plugin</artifactId>
+   				<version>2.4</version>
+			</plugin>
 		</plugins>
 	</reporting>
 
@@ -397,19 +400,13 @@
 		</repository>
 	</repositories>
 
+	
 	<distributionManagement>
-		<!-- <repository> <id>apache.releases.https</id> <name>Apache Release Distribution 
-			Repository</name> <url>https://repository.apache.org/service/local/staging/deploy/maven2</url> 
-			</repository> <snapshotRepository> <id>apache.snapshots.https</id> <name>Apache 
-			Development Snapshot Repository</name> <url>https://repository.apache.org/content/repositories/snapshots</url> 
-			</snapshotRepository> <site> <id>apache.website</id> <url>scp://people.apache.org/www/commons.apache.org/vfs</url> 
-			</site> -->
 		<repository>
-			<id>maven-nexus-zylk</id>
+			<id>maven-nexus-sinadura-repo</id>
 			<name>Maven Nexus at Zylk</name>
 			<url>https://services.zylk.net/nexus/content/repositories/sinadura-releases</url>
 		</repository>
-
 	</distributionManagement>
 
 	<!-- Releasing VFS as a multi-module build with binary artifacts is somewhat 
